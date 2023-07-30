@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+
+    section {
+      border: 1px solid black;
+      margin: 1rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    .container-vh {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container-vh .image-vh {
+      width: 35%;
+      height: 35%;
+      margin: 1rem;
+    }
+
+    p > span {
+      color: aquamarine;
+    }
+  </style>
+
+  <body>
+    <section>
+      <h1>Medida : Rem</h1>
+      <p>
+        Para lograr que la medida de rem mida 10 y no 16 lo que podemos hacer es
+        multiplicar 100 x 10 / 16 eso nos dara 62.5, ahora los rem valen 10px,
+        osea 2rem son 20px.
+      </p>
+
+      <img src="./image/prueba rem.PNG" alt="" />
+    </section>
+
+    <section>
+      <h1>Medida : vh y vw</h1>
+      <p>
+        La medida vh significa desirle a un div que tome toda el espacio de la
+        pantalla en vertical y vw le decimos que tome todo el espacio en la
+        pantalla de manera horizontal. hay que agregarle tanto una altura como
+        un ancho
+      </p>
+
+      <div class="container-vh">
+        <img class="image-vh" src="./image/prueba vh y vw.PNG" alt="" />
+        <img class="image-vh" src="./image/demo vh y vw 2.PNG" alt="" />
+      </div>
+    </section>
+
+    <p>
+      <span>a</span>
+      <span>a</span>
+      <span>a</span>
+      <span>a</span>
+      <span>a</span>s
+    </p>
+  </body>
+</html>

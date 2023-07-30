@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+    }
+
+    header {
+      background-color: aqua;
+    }
+
+    li {
+      display: inline;
+      margin: 5px;
+    }
+
+    .container-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .section-container {
+      margin: 7px;
+    }
+
+    .container {
+      display: flex;
+      background: papayawhip;
+      justify-content: space-between;
+      height: 200px;
+    }
+
+    .item {
+      width: 20%;
+      height: 20%;
+      background: peru;
+    }
+
+    .container-2 {
+      display: flex;
+      background: papayawhip;
+      justify-content: center;
+      height: 200px;
+      align-items: center;
+    }
+
+    .item-2 {
+      width: 20%;
+      height: 20%;
+      background: peru;
+    }
+
+    .container-2 .item-2:nth-child(2n + 1) {
+      background: coral;
+    }
+
+    .container-3 {
+      display: flex;
+      background: papayawhip;
+      justify-content: center;
+      height: 200px;
+      flex-direction: column;
+    }
+
+    .item-3 {
+      width: 20%;
+      height: 20%;
+      background: peru;
+    }
+
+    .container-3 .item-3:nth-child(2n + 1) {
+      background: coral;
+    }
+
+    .container-4 {
+      display: flex;
+      background: papayawhip;
+      justify-content: center;
+      height: 200px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item-4 {
+      width: 20%;
+      height: 20%;
+      background: peru;
+    }
+
+    .container-4 .item-4:nth-child(2n + 1) {
+      background: coral;
+    }
+
+    .container-5 {
+      display: flex;
+      background: papayawhip;
+      justify-content: center;
+      height: 200px;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .item-5 {
+      width: 20%;
+      height: 20%;
+      background: peru;
+    }
+
+    .container-5 .item-5:nth-child(2n + 1) {
+      background: coral;
+    }
+  </style>
+
+  <body>
+    <header>
+      <div class="container-nav">
+        <div class="container-title">
+          <h1>Estilos con display flex</h1>
+        </div>
+
+        <div class="container-list">
+          <nav>
+            <ul>
+              <li>Estilos con Flex</li>
+              <li>Estilos con Grid</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-container">
+      <div class="container">
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <div class="container-2">
+        <div class="item-2">Item</div>
+        <div class="item-2">Item</div>
+        <div class="item-2">Item</div>
+        <div class="item-2">Item</div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <div class="container-3">
+        <div class="item-3">Item</div>
+        <div class="item-3">Item</div>
+        <div class="item-3">Item</div>
+        <div class="item-3">Item</div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <div class="container-4">
+        <div class="item-4">Item</div>
+        <div class="item-4">Item</div>
+        <div class="item-4">Item</div>
+        <div class="item-4">Item</div>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <div class="container-5">
+        <div class="item-5">Item</div>
+        <div class="item-5">Item</div>
+        <div class="item-5">Item</div>
+        <div class="item-5">Item</div>
+      </div>
+    </section>
+  </body>
+</html>
